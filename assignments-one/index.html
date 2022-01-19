@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      /*
+        code  assignement 2   
+
+         this code will note work, 
+         because the script will loaded befaore the page content load,
+         the getelementbyid function will find the elment needed 
+      */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <h1 id="el2">Elzero</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+      
+      // code  assignement 2
+      var element= document.getElementById("el2").style;
+      element.color="blue";
+      element.fontSize='80px';
+      element.fontFamily='Arial';
+      element.textAlign='center';  
+      element.fontWeight='bold';
+      
+      //code for assignement 3
+      console.log("%cElzero %cWeb %cSchool",'color : red; font-size : 40px;','color : green; font-size : 40px; font-weight : bold','color : white; background-color : blue; font-size : 40px;');
+     
+      //code for assignement 4
+     console.group("Group 1");
+     console.log("Message One");
+     console.log("Message Tow");
+            console.group("Group Child");
+            console.log("Message One");
+            console.log("Message Tow");
+                console.group("Group Child Grand");
+                console.log("Message One");
+                console.log("Message Tow");
+                console.groupEnd();
+            console.groupEnd();
+    console.groupEnd();
+    
+    console.group("Group 2");
+    console.log("Message One");
+    console.log("Message Tow");
+    console.groupEnd();
+           
+    //code for assignement 5
+    let fruits = ['Apple', 'Banana','Orange']
+    console.table(fruits);
+
+    //code for assignement 6
+    //console.log("Iam In Console");
+    //document.write("Iam In Page");
+    
+    /* 
+     console.log("Iam In Console");
+     document.write("Iam In Page");
+    */
+</script>
+</body>
+</html>
