@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>       
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <div id='elzero'>object</div>
+    <script>
+        // Add Variables Here
+        numberOne=10;
+        numberTow=20;
+
+        // Ouput
+        console.log(""+numberOne+numberTow); // Normal Concatenate => 1020
+        console.log(typeof (""+numberOne+numberTow)); // Normal Concatenate => String
+        console.log(` ${numberOne}${numberTow}`); // Template Literals Way => 1020
+        console.log(`${typeof(""+numberOne+numberTow)}`); // Template Literals Way => String
+
+        console.log(numberOne+"\n"+numberTow);
+        /*
+            Normal Concatenate
+            20
+            10
+        */
+
+        console.log(`${numberOne}
+${numberTow}`);
+        /*
+            Template Literals Way
+            20
+            10
+       */
+
+
+       console.log(elzero.innerHTML); // object
+       console.log(typeof elzero); // object
+       
+       console.log('I\'m\n\\\\\nLove \\\\ """ \'\'\'\n++With++\n\\"""\\"""\n""JavaScript""``') 
+
+
+       let a = 21;
+       let b = 20;
+       console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`)
+
+    </script>
+</body>
+
+</html>
