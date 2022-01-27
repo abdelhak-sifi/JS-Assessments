@@ -10,7 +10,10 @@
     <h1>Hello World!</h1>
 
     <script>
-      // the first task
+       /*First part of assignement from 023 to 026 tutorial*/
+      
+      // task 1
+     
       let i = 0;
       console.log(100_000, ++i);
       console.log(1e5, ++i);
@@ -26,7 +29,7 @@
       console.log("", ++i);
       console.log("", ++i);
 
-      // the second task
+      // task 2
       console.log(-Number.MIN_SAFE_INTEGER);
 
       // task 3
@@ -51,9 +54,29 @@
       console.log(flt.toFixed(0));
 
       //task 7 
-
-      
       console.log(Math.floor(Math.random()*Math.floor(5)));
+      
+      /*Second part of assignement from 027 to 030 tutorial*/
+      
+      //task 1
+      let userName='Elzero';
+      console.log(userName.charAt(0).toLowerCase());
+      console.log(userName[0].toLowerCase());
+      console.log(userName.slice(0,1).toLowerCase());
+      console.log(userName.substring(0,1).toLowerCase());
+      console.log(userName.substr(0,1).toLowerCase());
+      console.log(userName.split("l")[0].toLowerCase().repeat(3));
+
+      //task 2 
+
+      let word='Elzero';
+      let letterZ='z';
+      let letterE='e';
+      let letterO='O';
+
+      console.log(word.includes(letterZ));
+      console.log(word.startsWith(letterE.toUpperCase()));
+      console.log(word.endsWith(letterO.toLowerCase()));
     </script>
   </body>
 </html>
