@@ -92,6 +92,24 @@
         for(++start;start<mix.length;start++){
               if(Number.isInteger(mix[start]) ) console.log(mix[start]);
         }
+
+        /*assignments-lesson-from-054-to-056*/
+        console.log("assignments-lesson-from-054-to-056");
+        /*Task 1*/
+        console.log("------Task 1-----");
+        friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+        index = 0;
+        counter = 0;
+        ++counter;
+        while(index<friends.length){
+            if(!Number.isInteger(friends[index]) && !friends[index].startsWith("A")){
+                    console.log('"'+counter+' =>'+friends[index]+'"');
+                    ++counter;
+            }
+            ++index;
+        }
+        /*Task 2*/
+        console.log("------Task 2-----");
     </script>
 </body>
 </html>
