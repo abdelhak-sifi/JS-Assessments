@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments Sever</title>
+</head>
+<body>
+    <script>
+        /*assignments-lesson-from-048-to-053*/
+        console.log("------Task 1-------");
+        /*Task 1*/
+        let start = 10;
+        let end = 100;
+        let exclude = 40;
+
+        for(let i=start;i<=end;i=i+start){
+                 if (i!==exclude)console.log(i);
+        }
+        /*Task 2*/
+        console.log("------Task 2-------");
+        start = 10;
+        end = 0;
+        stop = 3;
+        check=start
+        for(;start>=stop;start--){
+                if(start===check){
+                    console.log(""+start);
+                }else if(start<check){
+                    console.log("0"+start);
+                }
+        }
+        /*Task 3*/
+        console.log("------Task 3-------");
+
+        start = 1;
+        end = 6;
+        breaker = 2;
+
+        for(;start<=end;start++){
+               console.log(start);
+               console.log("-- "+breaker);
+               console.log("-- "+(breaker+breaker));
+        }
+        /*Task 4*/
+        console.log("------Task 4-----");
+         
+        let index = 10;
+        let jump = 2;
+        end = 0;
+
+        for (;;) {
+            if(index<(jump+jump)) break;
+            console.log(index);
+            index-=jump;
+            
+        }
+        /*Task 5*/
+        console.log("------Task 5-----");
+
+        let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+        let letter = "a";
+        let i=+false;
+        index=+true;
+        for(;i<friends.length;i++){
+                if(!friends[i].startsWith(letter.toUpperCase())){
+                    console.log('"'+index+' => '+friends[i]+'"');
+                    ++index;  
+                }  
+        }
+        /*Task 6*/
+        console.log("------Task 6-----");
+        
+        start = 0;
+        let swappedName = "elZerO";
+        let newSwappedName='';
+        for(;start<swappedName.length;start++){
+            if(swappedName[start]===swappedName[start].toUpperCase()){
+                newSwappedName+=swappedName[start].toLowerCase();
+            }else{
+                newSwappedName+=swappedName[start].toUpperCase();
+            }
+        }
+        console.log(newSwappedName);
+        /*Task 7*/
+        console.log("------Task 7-----");
+
+        start = 0;
+        let mix = [1, 2, 3, "A", "B", "C", 4];
+        
+        for(++start;start<mix.length;start++){
+              if(Number.isInteger(mix[start]) ) console.log(mix[start]);
+        }
+    </script>
+</body>
+</html>
