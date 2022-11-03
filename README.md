@@ -1,5 +1,5 @@
 # jsCourse
 
-## Javascript Course With Oussama Zero Web School
+## Javascript Assessments From Zero Web School JavaScript Bootcamp.
 
 
